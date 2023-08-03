@@ -1,29 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Babylonica&family=Bebas+Neue&family=Catamaran:wght@700&family=Dancing+Script&family=Gajraj+One&family=Gloock&family=Heebo:wght@400;500;700&family=Lato:wght@700&family=Montserrat:wght@300&family=Noto+Sans:ital@1&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Raleway:ital,wght@0,400;1,300&family=Schibsted+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nunito:wght@200&family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ff0228, #ee0b2d, #ef203f);
     height: 100vh;
-    font-family: 'Open Sans', sans-serif;
     position: relative;
 }
+.containner-master{
+    max-width: 900px;
+    height: 550px;
+    background-color: #fefefe;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.containner-master > img {
+    width: 50%;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
 
 form {
-    height: 500px;
-    width: 400px;
-    background-color: white;
-    display: flex;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fefefe;
     border-radius: 10px;
-    background: white;
-    box-shadow: 8px 8px 20px;
 }
 
 input {
@@ -32,9 +43,8 @@ input {
     padding: 5px;
     outline: none;
     border: none;
-    box-shadow: 0 0 3px;
-    border-radius: 5px;
-    font-weight: 700;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
 }
 
 
@@ -44,16 +54,15 @@ button {
     padding: 5px;
     outline: none;
     border: none;
-    box-shadow: 0 0 3px;
-    border-radius: 10px;
     font-size: 20px;
-    transition: .5s;
-    font-weight: 700;
+    transition: .2s;
+    font-weight: 500;
     cursor: pointer;
+    background-color: #ffc727;
 }
 
 button:hover {
-    background-color: #ef203f;
+    background-color: #ffbb00;
     color: white
 }
 
@@ -63,7 +72,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     padding: 10px;
     gap: 20px;
 }
@@ -91,43 +99,17 @@ button:hover {
 }
 
 .icones i {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     color: white;
     display: grid;
     place-items: center;
     font-size: 30px;
-    cursor: pointer
+    cursor: pointer;
+    background-color: #ffc727;
 }
 
-.fa-facebook {
-    background: linear-gradient(#16a7fc, #0c87ef, #0269e3);
-}
-
-.fa-facebook:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px blue;
-}
-
-.fa-twitter {
-    background-color: #00acef;
-}
-
-.fa-twitter:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px blue;
-}
-
-
-.fa-instagram {
-    background: linear-gradient(135deg, #5442d6, #c32593, #ef203f, #fec053);
-}
-
-.fa-instagram:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px blue;
-}
 
 .input-vazio {
     position: absolute;
